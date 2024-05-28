@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { SetStateAction, Dispatch } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+
+interface OwnProps {
+  todoValue: '' | string;
+  setTodoValue: Dispatch<SetStateAction<string>>;
+  addTask(): void;
+}
 
 const TodoHeaderBlock = styled.div`
   padding-top: 15px;
@@ -46,7 +52,11 @@ const TodoHeaderBlock = styled.div`
   }
 `;
 
-const TodoHeader: React.FC = () => {
+const TodoHeader: React.FC<OwnProps> = ({
+  todoValue,
+  setTodoValue,
+  addTask,
+}) => {
   return (
     <TodoHeaderBlock>
       <h1>Todo List</h1>
@@ -55,8 +65,10 @@ const TodoHeader: React.FC = () => {
           type='text'
           placeholder='할일을 입력하세요.'
           className='input-box'
+          value={todoValue}
+          onChange={(event) => setTodoValue(event.target.value)}
         />
-        <button className='add-btn'>
+        <button className='add-btn' onClick={addTask}>
           <FontAwesomeIcon icon={faPlus} />
         </button>
       </div>

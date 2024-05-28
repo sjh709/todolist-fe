@@ -2,6 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { Task } from '../model/task';
+
+interface OwnProps {
+  item: Task;
+  toggleComplete(id: string): void;
+  deleteItem(id: string): void;
+}
 
 const TodoItemBlock = styled.div`
   display: flex;
@@ -40,15 +47,15 @@ const Remove = styled.div`
   }
 `;
 
-const TodoItem: React.FC = () => {
+const TodoItem: React.FC<OwnProps> = ({ item, toggleComplete, deleteItem }) => {
   return (
     <TodoItemBlock>
-      <CheckCircle>
-        <FontAwesomeIcon icon={faCheck} />
+      <CheckCircle onClick={() => toggleComplete(item._id)}>
+        {item.isComplete && <FontAwesomeIcon icon={faCheck} />}
       </CheckCircle>
-      <Text>dd</Text>
+      <Text>{item.task}</Text>
       <Remove>
-        <FontAwesomeIcon icon={faTrash} />
+        <FontAwesomeIcon icon={faTrash} onClick={() => deleteItem(item._id)} />
       </Remove>
     </TodoItemBlock>
   );
