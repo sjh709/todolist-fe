@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+# 📍 TO-DO List | 투두리스트 (todolist)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![todolist](https://github.com/sjh709/todolist-fe/assets/42454759/8e88b015-6b72-4d3b-ab89-6bf5b53c821f)
 
-## Available Scripts
+- 배포 URL : https://s2-todo-demo.netlify.app/
+- todolist-fe(GitHub) : https://github.com/sjh709/todolist-fe
+- todolist-be(GitHub) : https://github.com/sjh709/todolist-be
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+## 🔍 프로젝트 소개
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 할 일을 입력할 수 있습니다.
+- 할 일을 체크하여 완료 표시를 할 수 있습니다.
+- 할 일을 삭제할 수 있습니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br>
 
-### `npm test`
+## ⏰ 개발 기간
+24.05.28 ~ 24.05.29 (2일)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+## ⚙️ 개발 환경
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Front-end : React, TypeScript, styled-components, Axios
+- Back-end : NodeJS, Express, MongoDB, Mongoose
+- 버전 관리 : Github
+- 서비스 배포 환경 : Netlify(FE), MongoDB Atlas(DB), AWS Elastic Beanstalk(BE)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 프로젝트 구조
 
-### `npm run eject`
+```
+src
+├── App.css
+├── App.test.tsx
+├── App.tsx
+├── components
+│   ├── TodoHeader.tsx
+│   ├── TodoItem.tsx
+│   ├── TodoList.tsx
+│   └── TodoTemplate.tsx
+├── index.css
+├── index.tsx
+├── logo.svg
+├── model
+│   └── task.ts
+├── react-app-env.d.ts
+├── reportWebVitals.ts
+├── setupTests.ts
+└── utils
+    └── api.ts
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
