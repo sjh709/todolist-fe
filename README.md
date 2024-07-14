@@ -2,9 +2,9 @@
 
 ![todolist](https://github.com/sjh709/todolist-fe/assets/42454759/8e88b015-6b72-4d3b-ab89-6bf5b53c821f)
 
-- 배포 URL : https://s2-todo-demo.netlify.app/
-- todolist-fe(GitHub) : https://github.com/sjh709/todolist-fe
-- todolist-be(GitHub) : https://github.com/sjh709/todolist-be
+- 배포 URL : ~~https://s2-todo-demo.netlify.app/~~ -> 배포 종료
+- 프론트엔드(GitHub) : https://github.com/sjh709/todolist-fe
+- 백엔드(GitHub) : https://github.com/sjh709/todolist-be
 
 <br>
 
@@ -17,11 +17,13 @@
 <br>
 
 ## 🌱 개발 인원
+
 1명
 
 <br>
 
 ## ⏰ 개발 기간
+
 24.05.28 ~ 24.05.29 (2일)
 
 <br>
